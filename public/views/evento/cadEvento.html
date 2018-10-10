@@ -1,0 +1,128 @@
+<div class="col-lg-12">
+	<div class="row">
+			<h1>Cadastro de eventos <small></small></h1>
+            <ol class="breadcrumb">
+              <li><a href="#/consEvento"><i class="icon-dashboard"></i> Consutar eventos</a></li>
+              <li class="active"><i class="icon-file-alt"></i> Cadastro de eventos</li>
+            </ol>
+     </div>
+</div>
+<div class="col-lg-12">
+	<div class ="panel panel-default"> 
+		<div class="panel-heading">
+		 	<h3 class="panel-title"></h3>
+		</div>
+		<div class="panel-body"> 
+			<!--  <div class="alert alert-dismissable alert-danger" ng-show="usuario.$invalid">
+				<!--<button type="button" class="close" data-dismiss="alert">&times;</button>
+				Verifique se todos os campo obrigatórios foram preenchidos!
+			</div> -->
+			<div class="row">
+				<div id="msg-error" class="col-lg-12"> 
+				</div>
+			</div>
+			<div class="row">
+					<form role="form">
+						<div class="col-lg-3"> </div>
+						<div class="col-lg-6">
+						     <div class="form-group">							
+							<label>Titulo*</label>
+							<input class="form-control" id="titulo" ng-model="evento.titulo" required  name="titulo"></input>
+						    </div>
+						    <div class="form-group">
+						    <label>Descricao*</label>
+							<textarea class="form-control" id="descricao" ng-model="evento.descricao" required  name="descricao"></textarea>
+						    </div>
+						    <div class="form-group">
+						    <label>Local*</label>
+							<input class="form-control" ng-model="evento.local" id="local" required name="local"></input>
+						     </div>  
+						    <div class="form-group">							
+							<label>Cidade*</label>
+						    <select class="form-control" ng-model="evento.cidade" id="cidade" required name="cidade" ng-options="cidade.nome for cidade in cidades"></select>
+						    </div>
+						    <div class="form-group">							
+							<label>Bairro</label>
+							<input class="form-control" ng-model="evento.bairro" id="bairro" required name="bairro"></input>
+						    </div>
+						    <div class="form-group">
+							<label>Rua</label>
+							<input class="form-control" ng-model="evento.rua" id="rua" required name="rua"></input>
+						    </div>
+						    <div class="form-group">
+						    <label>Latitude</label>
+							<input type="numeric" class="form-control" ng-model="evento.latitude" id="latitude" required name="latitude"></input>
+						    </div>
+						    <div class="form-group">
+						    <label>Longitude</label>
+							<input type="numeric" class="form-control" ng-model="evento.longitude" id="longitude" required name="longitude"></input>
+						    </div>
+						    <div class="form-group">
+						    <label>Numero</label>
+							<input type="numeric" class="form-control" ng-model="evento.numero" id="numero" required name="numero"></input>
+						    </div>
+						    <div class="form-group">
+						    <label>Data*</label>
+           					 <p class="input-group">
+              					<input disabled type="text" class="form-control" datepicker-popup="{{format}}"  ng-model="evento.data" id="data" required name="data" is-open="opened" min-date="minDate" max-date="'2050-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Sair" />
+              					<span class="input-group-btn">
+                					<button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              					</span>
+           					</p>						
+						    </div>
+						    <div class="form-group" ng-show="evento.$remove">
+							<label>Filalizado</label>
+						    <select class="form-control" ng-model="evento.finalizado" id="rua" name="rua">
+						     	<option ng-value="false" value="false">Nao</option>
+						     	<option ng-value="true" value="true">Sim</option>
+						    </select>
+						    </div>
+						    <input class="form-control" type="text" style="display:none;" ng-model="evento.imgCapa" id="srcImg" name="srcImg"></input>
+						</div>
+						<div class="col-lg-3"> </div> 			
+						<div class="row"> 
+							<div class="col-lg-4"></div>
+							<div class="col-lg-4">
+								<div class="panel panel-default"> 
+									<div class="panel-heading">
+										<h3 class="panel-title">Imagem de capa</h3>
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-lg-1"></div>
+											<div class="col-lg-2" id="preview" style="text-align:center;">
+												<img ng-hide="evento.imgCapa"  width="200" heigth="300" src="images/perfil.jpg">
+												<img  ng-hide="!evento.imgCapa" id="image" width="200" heigth="300" src="miniaturas/{{evento.imgCapa}}">
+											</div>
+										</div>
+									</div>
+									<div class="panel-footer">
+												<span class="btn btn-success fileinput-button">
+    											<i class="glyphicon glyphicon-plus"></i>
+    											<span></span>
+    											<input id="fileupload" onChange="onFileSelect('fileupload','preview')" type="file" name="imagem"></input>
+												</span>
+												<a class="btn btn-info ajax" href="imageEdit.html" >Recortar </a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4"></div> 
+							</div>
+							
+						</form>	
+						</div>
+				</div>
+				<div class="panel-footer">
+			  	<div class="row">
+					<div class="col-lg-6">
+						<a href="#/consEvento" class="btn btn-default">Cancelar</a>
+						<button class="btn btn-info" type="reset">Limpar</button>
+						<button class="btn btn-success" ng-click="save() ">Salvar</button>
+						<a ng-show="evento.$remove" href="" ng-click="remove()" class="btn btn-danger">Delete</a>
+			  	</div>
+			  </div>
+			</div>
+		</div>
+</div>
+
+

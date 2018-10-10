@@ -1,0 +1,66 @@
+<script src="js/forms.js"></script>
+ <style>
+	.noactive{
+		display:none;
+	}
+</style>
+    <div class="container">
+          <div class="row">
+        <article class="span8">
+              <h3>Fale conosco</h3>
+              <div class="inner-1">
+            <form id="contact-form">
+                  
+                  <fieldset>
+                <div>
+                    <label class="name">
+                    <input id="nome" type="text" placeholder="Seu nome">
+                  <br>
+                    <span class="error">*Nome invádo.</span> <span class="empty">*Campo obrigatório.</span> </label>
+                    </div>
+                  <div>
+                    <label class="phone">
+                    <input id="telefone" type="tel" placeholder="Telefone">
+                    <br>
+                    <span  class="error">*Telefone inválido.</span> <span class="empty">*Campo obrigatório.</span> </label>
+                    </div>
+                <div>
+                    <label class="email">
+                    <input id="email" type="email" placeholder="Email">
+                    <br>
+                    <span class="error">*E-mail inválido.</span> <span class="empty">*Campo obrigatório.</span> </label>
+                    </div>
+                <div>
+                    <label class="message">
+                    <textarea id="menssagem" placeholder="Menssagem"></textarea>
+                    <br>
+                    <span class="error">*Menssagem muito curta.</span> <span class="empty">*Campo obrigatório.</span> </label>
+                    </div>
+                	<div class="success noactive"> Contato enviado com sucesso! <strong>Aguarde enquanto analisamos sua solicitação.</strong> </div>
+              		<div class="error noactive"> Erro ao enviar contato <strong>Contacte-nos por telefone</strong> </div>
+                	<br>
+                	<div class="buttons-wrapper"> <button class="btn btn-1" data-type="reset" type="reset">Limpar</button> <a id="enviar" onClick="enviar()" class="btn btn-1" data-type="submit">Enviar</a></div>
+              </fieldset> 
+              
+                </form>
+          </div>
+            </article>
+        <article class="span4">
+              <h3>Informações de contato </h3>
+              <div class="map">
+            <iframe src="https://maps.google.com.br/maps?q=crici%C3%BAma&amp;ie=UTF8&amp;hq=&amp;hnear=Crici%C3%BAma+-+Santa+Catarina&amp;t=m&amp;z=11&amp;ll=-28.67277,-49.373377&amp;output=embed"> </iframe>
+          </div>
+              <address class="address-1">
+          <div class="overflow"> 
+                <span>Telefone:</span>(48)9926-2802<br>
+                <span>FAX:</span>(48)3437-8247 <br>
+                <span>E-mail:</span> <a href="#" class="mail-1">guilhermerossettilima@gmail.com</a><br>
+                <span>Skype:</span> <a href="#" class="mail-1">@guilhermeRL</a></div>
+          </address>
+            </article>
+      </div>
+		
+ </div>
+
+
+        

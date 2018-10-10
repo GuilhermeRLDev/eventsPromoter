@@ -1,0 +1,58 @@
+<div class ="panel panel-default"> 
+	<div class="panel-heading">
+	     <div  class="row">
+		 <div class="col-lg-3"><span class="btn btn-success fileinput-button">
+    											<i class="glyphicon glyphicon-plus"></i>
+    											<span></span>
+    											<input id="fileupload" onChange="uploadBanners()" type="file" name="imagem" multiple></input>
+												</span></div>
+		<div class="col-lg-6">
+			<div class="form-group input-group">
+                		<input class="form-control" ng-model="search" type="text">
+                		<span class="input-group-btn">
+                  		<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                		</span>
+              		</div>
+		</div>
+		<div class="col-lg-6"></div>
+    	    </div>
+	</div>
+	<div class="panel-body">
+<div class="col-lg-12">
+            <br/>
+<br/>
+	     <div class="table-responsive">
+              <table class="table table-bordered table-hover table-striped tablesorter">
+                <thead>
+                  <tr>
+                    <th>Banner <i class="fa fa-sort"></i></th>
+		            <th>Ações <i class="fa fa-sort"></i></th>                  
+		</tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="banner in banners | filter:search | orderBy:'banner.endereco'">
+                    <td><img src="uploads/{{banner.nome}}" width="300" /></td>
+		    		<td width="100">
+		    			<div style="float:right;">			
+							<div class='col-lg-2'>
+								<a href="#/banners/remove/{{banner._id}}"><i class="fa fa-minus"> </i></a>
+							</div>
+						</div>
+		    	   </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div><!-- /.row -->
+	<div class="panel-footer">
+			  <div class="row">
+				<div class="col-lg-6">
+					<!-- <a href="#/newGrupo" class="btn btn-success" ng-click="save()">Novo</a>-->
+				<div>
+			  </div>
+	
+	<div>
+</div>
+<div ng-controller="ModalDemoCtrl">
+</div>

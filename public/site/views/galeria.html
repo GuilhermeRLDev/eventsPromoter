@@ -1,0 +1,20 @@
+
+ <!--============================== content =================================-->      
+      <div id="content"><div class="ic">More Website Templates @ TemplateMonster.com. November19, 2012!</div>
+    <div class="container">
+          <div class="row">
+        <article class="span12">
+        <h3>{{evento.titulo}}</h3>
+         </article>
+        <div class="clear"></div>
+         <ul class="portfolio clearfix">           
+          <li class="box" style="height:190px;width:250px;overflow:hidden" ng-repeat="imagem in imagens"><a ng-click="abrirPopup($index)" id="{{imagem._id}}" class="magnifier ajax" href="imageEdit.html" ><img alt="" src="miniaturas/{{imagem.imgSrc}}" ></a></li> 
+                     
+            </ul> 
+            <a ng-click="voltar()" class="btn btn-info">Sair da galeria</a> 
+      </div>
+        </div>
+        
+  </div>
+
+	

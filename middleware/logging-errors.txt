@@ -1,0 +1,250 @@
+Sun Jun 08 2014 14:46:15 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: Cannot find module './routes/user'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (D:\home\site\wwwroot\server.js:8:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+Sun Jun 08 2014 14:48:02 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:48:06 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:48:09 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:48:13 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:48:32 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:48:38 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:48:44 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:48:51 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:48:58 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:50:01 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:50:27 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:51:32 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:54:39 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:56:28 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Sun Jun 08 2014 14:56:55 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [g18:27017]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:830:16
+    at process._tickCallback (node.js:415:13)
+Tue Jun 10 2014 21:01:06 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Sun Jun 15 2014 15:11:13 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: failed to connect to [ds048537.mongolab.com:48537]
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (D:\home\site\wwwroot\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickCallback (node.js:415:13)
+Mon Jun 16 2014 14:52:49 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 14:56:32 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 15:21:21 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 15:24:26 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 15:27:32 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 15:32:00 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 16:21:37 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 16:28:50 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 16:32:01 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 16:33:39 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 16:39:28 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 16:43:40 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 16:50:56 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 16:51:50 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 17:24:33 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 18:16:43 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 18:23:37 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 18:26:27 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 18:45:54 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 18:46:30 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 18:50:37 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 19:11:06 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 19:53:23 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 19:57:46 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: spawn EPERM
+    at errnoException (child_process.js:980:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+Mon Jun 16 2014 20:07:57 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: This socket is closed.
+    at Socket._write (net.js:635:19)
+    at doWrite (_stream_writable.js:221:10)
+    at writeOrBuffer (_stream_writable.js:211:5)
+    at Socket.Writable.write (_stream_writable.js:180:11)
+    at Socket.write (net.js:613:40)
+    at resizeCall (D:\home\site\wwwroot\node_modules\imagemagick\imagemagick.js:262:18)
+    at Object.exports.resize (D:\home\site\wwwroot\node_modules\imagemagick\imagemagick.js:273:10)
+    at D:\home\site\wwwroot\middleware\uploads.js:35:9
+    at Object.oncomplete (fs.js:107:15)
+Mon Jun 16 2014 20:08:57 GMT+0000 (Coordinated Universal Time): Unaught exception: Error: This socket is closed.
+    at Socket._write (net.js:635:19)
+    at doWrite (_stream_writable.js:221:10)
+    at writeOrBuffer (_stream_writable.js:211:5)
+    at Socket.Writable.write (_stream_writable.js:180:11)
+    at Socket.write (net.js:613:40)
+    at resizeCall (D:\home\site\wwwroot\node_modules\imagemagick\imagemagick.js:262:18)
+    at Object.exports.resize (D:\home\site\wwwroot\node_modules\imagemagick\imagemagick.js:273:10)
+    at D:\home\site\wwwroot\middleware\uploads.js:35:9
+    at Object.oncomplete (fs.js:107:15)

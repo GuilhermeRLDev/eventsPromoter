@@ -1,0 +1,55 @@
+<% include ../header %>
+<% include ../left %>
+
+<div id="page-wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Blank Page <small>NForumBr</small></h1>
+            <ol class="breadcrumb">
+              <li><a href="/"><i class="icon-dashboard"></i> Tópicos</a></li>
+              <li class="active"><i class="icon-file-alt"></i> Home</li>
+            </ol>
+          </div>
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 id="nav-tabs">Cadastro de usuários</h2>
+            <div class="bs-example">
+              <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                <li class="active"><a href="#consultar" data-toggle="tab">Consultar</a></li>                
+              </ul>
+              <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="consultar">
+                  <div class="table-responsive">
+              <table class="table table-bordered table-hover tablesorter">
+                <thead>
+                  <tr>
+                    <th>Nome <i class="fa fa-sort"></i></th>
+                    <th>e-mail <i class="fa fa-sort"></i></th>
+                    <th>Usuario <i class="fa fa-sort"></i></th>
+                    <th>Senha <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                <% users.forEach(function(u,  i){ %>
+                  <tr>
+                    <td><%- u.nome    %></td>
+                    <td><%- u.email   %></td>
+                    <td><%- u.usuario %></td>
+                    <td><%- u.senha   %></td>
+                  </tr>
+                  <% }); %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+        
+</div><!-- /#page-wrapper -->
+
+<% include ../footer %>
+      
+ 

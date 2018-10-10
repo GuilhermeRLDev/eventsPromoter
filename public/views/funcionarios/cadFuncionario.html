@@ -1,0 +1,83 @@
+<div class="col-lg-12">
+	<div class="row">
+			<h1>Cadastro de clientes<small></small></h1>
+            <ol class="breadcrumb">
+              <li><a href="#/clientes"><i class="icon-dashboard"></i> Consutar menus</a></li>
+              <li class="active"><i class="icon-file-alt"></i> Cadastro de menus</li>
+            </ol>
+     </div>
+</div>
+<div class="col-lg-12">
+	<div class ="panel panel-default"> 
+		<div class="panel-heading">
+		 	<h3 class="panel-title"></h3>
+		</div>
+		<div class="panel-body"> 
+			<!--  <div class="alert alert-dismissable alert-danger" ng-show="grupo.$invalid">
+				<!--<button type="button" class="close" data-dismiss="alert">&times;</button>
+				Verifique se todos os campo obrigatórios foram preenchidos!
+			</div> -->
+			<div class="row">
+				<div id="msg-error" class="col-lg-12"> 
+				</div>
+			</div>
+			<div class="row">
+					<form role="form">
+						<div class="col-lg-3"> </div>
+						<div class="col-lg-6">
+							<div class="form-group">							
+								<label>Nome</label>
+								<input class="form-control" id="nome" ng-model="cidade.nome" required  name="nome"></input>
+						    </div>
+						     <div class="form-group">							
+								<label>Cidade</label>
+								<select  id="uf" class="form-control" ng-model="cliente.cidade" required  name="cidade" ng-options="cidade.nome for cidade in cidades"></select>
+						    </div>
+						    <div class="form-group">
+						    	<label>Endereço</label>
+						    	<input class="form-control" id="endereco" ng-model="cliente.endreco" required name="endereco"></input>
+						    </div>
+
+						    <div class="form-group">
+						    	<label>Complemento</label>
+						    	<input class="form-control" id="complemento" ng-model="cliente.complemento" required name="endereco"></input>
+						    </div>
+
+						    <div class="form-group">
+						    	<label>CEP</label>
+						    	<input class="form-control" id="cep" ng-model="cliente.cep" required name="cep"></input>
+						    </div>
+
+						    <div class="form-group">
+						    	<label>Numero</label>
+						    	<input type = "numeric" class="form-control" id="numero" ng-model="cliente.numero" required name="numero"></input>
+						    </div>
+						    <div class="form-group">
+							    <label>Data nascimento*</label>
+	           					 <p class="input-group">
+	              					<input disabled type="text" class="form-control" datepicker-popup="{{format}}"  ng-model="cliente.datanasc" id="datanasc" required name="datanasc" is-open="opened" min-date="minDate" max-date="'2050-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Sair" />
+	              					<span class="input-group-btn">
+	                					<button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+	              					</span>
+	           					</p>						
+						    </div>
+						   	<div class="form-group">							
+								<label> Cargo </label>
+								<select  id="uf" class="form-control" ng-model="cliente.cidade" required  name="cidade" ng-options="cidade.nome for cidade in cidades"></select>
+						    </div>
+						</div>
+				</div>
+				<div class="panel-footer">
+			  <div class="row">
+				<div class="col-lg-6">
+					<a href="#/clientes" class="btn btn-default">Cancelar</a>
+					<button class="btn btn-info" type="reset">Limpar</button>
+					<button class="btn btn-success" ng-click="save() ">Salvar</button>
+					<a ng-show="cliente.$remove" href="" ng-click="remove()" class="btn btn-danger">Delete</a>
+			  	</div>
+			  </div>
+			</div>
+		</div>
+	</form>	
+</div>
+

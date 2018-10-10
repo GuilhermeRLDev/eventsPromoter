@@ -1,0 +1,97 @@
+var app = angular.module('project',['ngRoute','ngResource'])
+.factory('Usuario',function($resource){
+	return $resource('/home/:idUser', {idUser:'@idUser'}, {
+              query: { method: 'GET', params: {idUser:'getUser'}, isArray: true },
+	      del  : { method: 'DELETE',params:{idUser:'@idUser'}},
+	      update  : { method: 'PUT',params:{idUser:'@idUser'}},
+	      get  : { method: 'GET',params:{idUser:'@idUser'}}
+		
+    });
+})
+.config(function($routeProvider){
+	
+$routeProvider
+	.when("/consUsu",{
+		controller:'ListCtrl',
+		templateUrl:'views/usuarios/listUsu.html'	
+	})
+	.when ("/new",{
+
+		controller:'CreateList',
+		templateUrl:'views/usuarios/cadUsu.html'	
+	})
+	.when("/edit/:userId",{
+			
+		controller:'EditController',
+		templateUrl:'views/usuarios/cadUsu.html'
+	     })
+
+})
+.controller('ListCtrl', function($scope, Usuario, $routeParams){
+	$scope.usuarios = Usuario.query();
+	$scope.del = function(id){
+		Usuario.del({idUser:id});
+		alert($routeParams.userId);
+	};
+	$scope.edit = function(id){
+
+	};	
+})
+.controller('EditController', function($scope, Usuario, $location,$routeParams){
+	
+
+	   $scope.usuario = Usuario.get({idUser:$routeParams.userId});
+	    
+	   $scope.save = function(usuario){
+
+				
+		$scope.usuario.$update({idUser:$routeParams.userId},function(){
+		   $location.path('consUsu');
+		});
+		 
+		
+
+	   }	
+	
+	   $scope.remove = function(){
+
+		Usuario.del({idUser:$routeParams.userId});
+		$location.path('consUsu');
+
+	   }
+
+	
+
+
+})
+.controller('CreateList',function($scope,Usuario,$location){
+	
+	
+	$scope.save = function(){
+
+		if (($scope.usuario.nome === '') ||
+	   	   ($scope.usuario.email === '') ||
+	   	   ($scope.usuario.nickname === '')||
+	   	   ($scope.usuario.senha === '')){
+
+			alert('antes de salvar preencha todos os campos');
+
+		} else {
+
+			var usuario = new Usuario($scope.usuario);
+			usuario.$save(function(error, resp){
+				if (!error.error){
+					$location.path('consUsu');
+				}else{
+			
+					alert(error.error);
+
+				}	
+			
+			});
+
+		}
+	}
+	
+});
+

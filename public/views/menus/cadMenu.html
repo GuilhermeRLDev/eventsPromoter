@@ -1,0 +1,54 @@
+<div class="col-lg-12">
+	<div class="row">
+			<h1>Cadastro de menus<small></small></h1>
+            <ol class="breadcrumb">
+              <li><a href="#/consMenu"><i class="icon-dashboard"></i> Consutar menus</a></li>
+              <li class="active"><i class="icon-file-alt"></i> Cadastro de menus</li>
+            </ol>
+     </div>
+</div>
+<div class="col-lg-12">
+	<div class ="panel panel-default"> 
+		<div class="panel-heading">
+		 	<h3 class="panel-title"></h3>
+		</div>
+		<div class="panel-body"> 
+			<!--  <div class="alert alert-dismissable alert-danger" ng-show="grupo.$invalid">
+				<!--<button type="button" class="close" data-dismiss="alert">&times;</button>
+				Verifique se todos os campo obrigatórios foram preenchidos!
+			</div> -->
+			<div class="row">
+				<div id="msg-error" class="col-lg-12"> 
+					<div class="alert alert-dismissable alert-danger" ng-show="grupo.$invalid">
+							Verifique se todos os campo obrigatórios foram preenchidos!
+					</div>
+				</div>
+			</div>
+			<div class="row">
+					<form role="form">
+						<div class="col-lg-3"> </div>
+						<div class="col-lg-6">
+						     <div class="form-group">							
+							<label>Nome</label>
+							<input class="form-control" id="nome" ng-model="menu.nome" required  name="nome"></input>
+						    </div>
+						    <div class="form-group">							
+							<label>Endereço</label>
+							<input class="form-control" id="endereco" ng-model="menu.endereco" required  name="endereco"></input>
+						    </div>
+						</div>
+				</div>
+				<div class="panel-footer">
+			  <div class="row">
+				<div class="col-lg-6">
+					<a href="#/consMenu" class="btn btn-default">Cancelar</a>
+					<button class="btn btn-info" type="reset">Limpar</button>
+					<button class="btn btn-success" ng-click="save() ">Salvar</button>
+					<a ng-show="menu.$remove" href="" ng-click="remove()" class="btn btn-danger">Delete</a>
+			  	</div>
+			  </div>
+			</div>
+		</div>
+	</form>	
+</div>
+

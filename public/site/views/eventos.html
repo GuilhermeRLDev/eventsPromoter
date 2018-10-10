@@ -1,0 +1,135 @@
+  <style>
+.noline a{
+	text-decoration: none;
+
+}
+.divNome{
+	width:50%;
+	margin-left:50%;
+}
+.divSelected{
+	width:70%;
+	margin-left:30%;
+}
+.divPrincipal:hover .divNome{
+	margin-left:30%;
+	width:70%;	
+}
+</style> 
+  <style>
+  	/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;
+
+}
+/*a nice BG*/
+
+
+/*Thumbnail Background*/
+.thumb {
+	width: 300px; height: 200px; margin: 10px ;
+	float:left;
+	perspective: 1000px;
+}
+.thumb a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+
+}
+.moldura{
+	padding:5px;
+	background-color:white;
+	height:200px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+.moldura:hover{
+	padding:5px;
+	width:305px;
+	background-color:white;
+	height:205px;
+
+}
+  	
+  </style>
+  <nav style="background-color:black;padding:10px 10px 10px">		
+	<div class="form-group input-group" style="margin:0 auto;width:35%">
+         <input class="form-control" ng-model="search" type="text">
+         <span class="input-group-btn">
+         <button class="btn btn-info" type="button"><i class="glyphicon glyphicon-search "></i></button>
+         </span>
+    </div>
+ </nav>
+ <div id="content"><div class="ic"></div>
+
+  <br/>
+
+<div class="container noline" style="width:95%;padding:0px;background-color:white;padding:10px;-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px; margin-left:30px;">
+            	
+            	
+            	<div style="width:99%;border-bottom:2px solid #4682B4">Ultimos eventos</div>
+            	<br/>
+            	<div class="" ng-repeat="evento in eventos | filter:search | orderBy:'evento.data'" style="float:left;">
+
+               <a href="#/galeria/{{evento._id}}"> <div class="divPrincipal"  style="width:300px;height:200px;background-image:url('miniaturas/{{evento.imgCapa}}');padding-top:40%;" > <div class="divNome" style="background-color:black;font-size:15px;text-align:center;filter:alpha(opacity=30); opacity:0.8;-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;"><div style="width:99%;color:gray;border-bottom:2px solid #4682B4"><b>{{evento.titulo}}</b></div><div style="color:white">{{evento.local}}</div><div style="color:white">{{evento.data}}</div></div></div></a>
+					
+              	</div>
+          </div>
+           <!--  <li class="span4">
+            <div class="thumbnail thumbnail-1"> <img  src="img/page2-img2.jpg" alt="">
+                  <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
+                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+              </section>
+                </div>
+          </li>
+              <li class="span4">
+            <div class="thumbnail thumbnail-1"> <img  src="img/page2-img3.jpg" alt="">
+                  <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
+                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+              </section>
+                </div>
+          </li>
+              <li class="span4">
+            <div class="thumbnail thumbnail-1"> <img  src="img/page2-img4.jpg" alt="">
+                  <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
+                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+              </section>
+                </div>
+          </li>
+              <li class="span4">
+            <div class="thumbnail thumbnail-1"> <img  src="img/page2-img5.jpg" alt="">
+                  <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
+                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+              </section>
+                </div>
+          </li>
+              <li class="span4">
+            <div class="thumbnail thumbnail-1"> <img  src="img/page2-img6.jpg" alt="">
+                  <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
+                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+              </section>
+                </div>
+          </li>-->
+
+  </div>

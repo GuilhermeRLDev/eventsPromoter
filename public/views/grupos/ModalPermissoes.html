@@ -1,0 +1,15 @@
+  <div class="modal-header">
+            <h3>Permissoes do grupo</h3>
+        </div>
+        <div class="modal-body">
+            <div class= "form-group">
+                <div class="checkbox" ng-repeat="menu in menus">
+                    <label>
+                    <input type="checkbox" value=""/>{{ menu.nome }}</label>
+                </div>
+             </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancelar</button>
+        </div>

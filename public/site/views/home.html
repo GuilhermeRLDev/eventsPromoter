@@ -1,0 +1,139 @@
+<style>
+.noline a{
+	text-decoration: none;
+
+}
+.divNome{
+	width:50%;
+	margin-left:50%;
+}
+.divSelected{
+	width:70%;
+	margin-left:30%;
+}
+.divPrincipal:hover .divNome{
+	margin-left:30%;
+	width:70%;	
+}
+</style> 
+  <div class="container">
+    <div class="row">
+      <div class="span12"> 
+        <!--============================== slider =================================-->
+        <!--<div class="flexslider">
+              <ul class="slides">
+            <li> <img src="site/img/slide-1.jpg" alt="" > </li>
+            <li> <img src="site/img/slide-2.jpg" alt="" > </li>
+            <li> <img src="site/img/slide-3.jpg" alt="" > </li>
+            <li> <img src="site/img/slide-4.jpg" alt="" > </li>
+            <li> <img src="site/img/slide-5.jpg" alt="" > </li>
+          </ul>
+            </div>-->
+		
+		
+		
+<div id="myCarousel" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner" >
+    <div class="active item" style="width:100%;height:450px;overflow:hidden;"><img src="uploads/{{bannerp.nome}}" alt="" style="width:100%;max-heigth:450px;"></div>
+    <div class="item"  ng-repeat="banner in banners" style="width:100%;height:450px;overflow:hidden;"><img src="uploads/{{banner.nome}}" alt="" style="width:100%;max-heigth:450px"  ></div>
+    <!--  <div class="item" style="overflow:hidden;"><img src="site/img/imagem41.jpeg" alt="" style="width:100%" ></div>-->
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    
+
+    
+    </div>
+
+
+		
+		
+		
+		
+		<!-- Captions for Orbit -->
+	<!-- <div id="featured"> 
+     	<img src="site/img/slide-1.jpg" alt="Overflow: Hidden No More" />
+     	<img src="site/img/slide-1.jpg"  alt="HTML Captions" />
+     	<img src="site/img/slide-1.jpg" alt="and more features" />
+	</div>-->
+        <span id="responsiveFlag"></span>
+
+      </div>
+        </div>
+  </div>
+      
+      <!--============================== content =================================-->
+      <div id="content" class="content-extra" ><div class="ic"></div>
+    <div class="row-1" style="width:1024;height:800px;overflow:auto;">
+          <br/>
+          <div class="container noline" style="width:49%;height:665px;padding:0px;background-color:white;padding:10px;-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px; margin-left:100px;float:left;">
+            	
+            	
+            	<div style="width:99%;border-bottom:2px solid #4682B4">Ultimos eventos</div>
+            	<br/>
+            	<div class="" ng-repeat="evento in eventos" style="float:left;">
+
+               <a href="#/galeria/{{evento._id}}"> <div class="divPrincipal"  style="width:300px;height:200px;background-image:url('miniaturas/{{evento.imgCapa}}');padding-top:40%;" > <div class="divNome" style="background-color:black;font-size:15px;text-align:center;filter:alpha(opacity=30); opacity:0.8;-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;"><div style="width:99%;color:gray;border-bottom:2px solid #4682B4"><b>{{evento.titulo}}</b></div><div style="color:white">{{evento.local}}</div><div style="color:white">{{evento.data}}</div></div></div></a>
+					
+              	</div>
+          </div>
+          <div class="container" style="width:30%;padding:0px;background-color:white;padding:10px;-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px; margin-left:50px;float:left;">
+            	
+            	
+            	<div style="width:99%;border-bottom:2px solid #4682B4">Agenda</div>
+            	<br/>
+            	<div style="max-height:400px;overflow:auto"">
+  				<div style="min-width:350px;width:100%;">
+         	 		<div style="" ng-repeat="item in agenda">
+         	 			<div style="float:left;" ><img width="100" src="miniaturas/{{item.imgCapa}}"  alt=""></div>
+         	 			<div style="float:left;margin-left:10px;"><table><tr><td>{{item.titulo}} / {{item.local}}</td><tr>
+         	 			<tr><td>{{item.data}}</tr></td>
+						</table>
+         	 			</div>
+						<div style="padding:10px;background-color:white;float:right"><a href="#/perfilEvento/{{item._id}}"><img width="40" src="site/img/mais.jpg" alt="" /></a></div>
+					</div>
+         	 	</div>
+         	 	</div>
+          </div>
+ 
+                    <div class="container" style="width:30%;padding:0px;background-color:white;padding:10px;-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px; margin-left:50px;float:left;max-height:400px;overflow:auto;margin-top:20px">
+            	
+            	
+            	<div style="width:99%;border-bottom:2px solid #4682B4">Promoções</div>
+            	<br/>
+        </div>
+     </div>
+     <br/>
+        </div>
+    <div class="container">
+    	
+  </div>
+  <script>
+  	$('.divPrincipal').hover(function(){
+  		$('.divNome').removeClass('divNome');
+		$('.divNome').addClass('divSelected');
+  	});
+  </script>
+  <script type="text/javascript" src="site/js/jquery.flexslider-min.js"></script>
